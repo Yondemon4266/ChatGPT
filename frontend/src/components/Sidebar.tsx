@@ -30,7 +30,7 @@ export default function SideBar() {
         <AiOutlineCaretRight />
       </button>
       <div
-        className={`z-[2000] w-72 h-screen max-h-screen absolute left-0 top-0 max-sm:w-5/6 p-3 pb-0 flex flex-col gap-2 items-start overflow-y-scroll overflow-x-hidden  transition-all duration-300 ${
+        className={`z-[1000000] w-72 h-screen max-h-screen absolute left-0 top-0 max-sm:w-5/6 p-3 pb-0 flex flex-col gap-2 items-start overflow-y-scroll overflow-x-hidden  transition-all duration-300 ${
           isSideBarOpen.value ? "translate-x-0" : "-translate-x-full"
         }`}
         style={{ backgroundColor: `${VerifTheme("#191919", "#F9F9F9")}` }}
