@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { theme } from "../signals/Theme";
 import { VerifTheme } from "../utility/VerifTheme";
-import SuggestionButton from "./SuggestionButton";
 import { PromptChatgpt, conversations } from "../signals/Chatgpt";
 import { userId } from "../signals/UserID";
 import { currentConversation } from "../signals/ConversationSignals";
@@ -9,10 +8,6 @@ import { loading } from "../signals/Loading";
 import { FaRegStopCircle } from "react-icons/fa";
 
 export default function Input() {
-  const currentConv = conversations.value[currentConversation.value];
-
-  const isConversationEmpty =
-    !currentConv || !currentConv.messages || currentConv.messages.length === 0;
   const [text, setText] = useState("");
 
   const handleTextAreaAutoExpand = (
