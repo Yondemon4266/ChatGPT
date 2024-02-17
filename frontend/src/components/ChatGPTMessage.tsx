@@ -20,7 +20,7 @@ export default function ChatGPTMessage({
         </div>
         <div className="flex flex-row gap-2 items-center ">
           <div className="text-justify break-words">
-            {isEnd && <WordsDisplay text={message} delay={50} />}
+            {isEnd && <WordsDisplay text={message} delay={5} />}
             {!isEnd && <p>{message}</p>}
           </div>
         </div>

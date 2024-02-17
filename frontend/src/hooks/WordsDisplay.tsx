@@ -10,9 +10,9 @@ export function WordsDisplay({
 
     let index = 0;
     const interval = setInterval(() => {
-      if (index <= text.length) {
-        setWordsDisplayed(text.substring(0, index));
-        index += 8;
+      if (index < text.length) {
+        setWordsDisplayed((letter) => letter + text.charAt(index));
+        index++;
       } else {
         clearInterval(interval);
       }

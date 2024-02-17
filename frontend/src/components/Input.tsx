@@ -42,31 +42,6 @@ export default function Input() {
       className="z-50 h-24 fixed bottom-0 left-1/2 -translate-x-1/2 flex items-center w-[52%] max-xl:w-3/5 max-lg:w-4/5 max-sm:w-11/12"
       style={{ background: VerifTheme(theme.value.dark, theme.value.light) }}
     >
-      {isConversationEmpty && (
-        <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 max-md:grid-cols-1 pb-3">
-          <SuggestionButton
-            hidden={false}
-            text="Quelles sont les façons de rester motivé et persévérant face aux défis? "
-            title="Challenge"
-          />
-          <SuggestionButton
-            hidden={false}
-            text="Quelle est la plus grande statue du monde? "
-            title="Statue"
-          />
-          <SuggestionButton
-            hidden={true}
-            text="Quels sont les plus grands accomplissements de l'humanité dans le domaine de la science et de la technologie? "
-            title="Humanité"
-          />
-          <SuggestionButton
-            hidden={true}
-            text="Quels sont les moyens efficaces pour gérer le stress au quotidien?"
-            title="Gérer son stress"
-          />
-        </div>
-      )}
-
       <div className="relative w-full h-auto">
         <textarea
           placeholder="Message ChatGPT..."
