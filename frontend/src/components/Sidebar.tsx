@@ -11,7 +11,6 @@ import { useState } from "react";
 
 export default function SideBar() {
   const [removeAllVisible, setRemoveAllVisible] = useState(false);
-  console.log(isSideBarOpen.value);
 
   return (
     <>

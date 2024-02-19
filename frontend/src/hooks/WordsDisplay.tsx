@@ -6,8 +6,6 @@ export function WordsDisplay({
 }: Readonly<{ text: string; delay: number }>) {
   const [wordsDisplayed, setWordsDisplayed] = useState("");
   useEffect(() => {
-    console.log("hello");
-
     let index = 0;
     const interval = setInterval(() => {
       if (index < text.length) {

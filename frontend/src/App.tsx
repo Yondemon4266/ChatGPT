@@ -28,7 +28,7 @@ export default function App() {
             backgroundColor: VerifTheme(theme.value.dark, theme.value.light),
           }}
         >
-          <div className="flex gap-2 items-center max-md:flex-col max-md:gap-1 ">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 items-center max-md:flex-col max-md:gap-1 ">
             <h2 className="text-lg font-semibold max-lg:text-base">
               ChatGPT 3.5
             </h2>
